@@ -40,10 +40,10 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Gaming and Marketing is what I`m all about.
-
-        Campaign and Account management, Social media management, influencer marketing, and video game knowledge.
-        
+        Gaming and marketing is what I`m all about.
+        <br/>
+        Campaign and account management, social media management, influencer marketing, and video game knowledge.
+        <br/>
         Proactive, decisive, perseverant.
       </motion.p>
 
