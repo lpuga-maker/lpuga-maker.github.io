@@ -98,7 +98,8 @@ export const projects = [
       { name: "Influencer-Marketing", color: "orange-text-gradient" },
     ],
     image: Steganography,
-    source_code_link: "www.youtube.com/watch?v=GVJrQNEBMQA&feature=youtu.be",
+    source_code_link: 
+      "https://www.youtube.com/watch?v=GVJrQNEBMQA&feature=youtu.be",
   },
   {
     name: "Ultimate Pringles Rocket League Challenge",
@@ -111,7 +112,8 @@ export const projects = [
       { name: "Account-Management", color: "orange-text-gradient" },
     ],
     image: DOMJudge,
-    source_code_link: "www.youtube.com/watch?si=BOSC-bredtTDC5sr&v=fWL4v_1SYfU&feature=youtu.be",
+    source_code_link: 
+      "https://www.youtube.com/watch?si=BOSC-bredtTDC5sr&v=fWL4v_1SYfU&feature=youtu.be",
   },
   {
     name: "Antwology: A new way of education",
