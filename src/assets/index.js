@@ -9,6 +9,7 @@ import Steganography from "./projects/Steganography.png";
 import DOMJudge from "./projects/DOMJudge.png";
 import EvolutionProject from "./projects/EvolutionProject.png";
 import Find_Vuln from "./projects/Find_Vuln.png"
+import Warner from "./projects/Warner.png"
 
 // Import tech logos
 import css from "./tech/css.png";
@@ -20,6 +21,7 @@ import reactjs from "./tech/reactjs.png";
 
 // Import company logos
 import BNP from "./company/BNP.png"
+import BNP2 from "./company/BNP2.jpg"
 
 // Import common assets
 import github from "./github.png";
@@ -42,7 +44,9 @@ export {
   DOMJudge,
   EvolutionProject,
   Find_Vuln,
+  Warner,
   BNP,
+  BNP2,
   menu,
   close,
 };

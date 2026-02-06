@@ -6,11 +6,8 @@ import {
   javascript,
   html,
   css,
-  reactjs,
   BNP,
   BNP2,
-  nodejs,
-  git,
   Steganography,
   DOMJudge,
   EvolutionProject,
@@ -46,39 +43,12 @@ export const services = [
 ];
 
 export const technologies = [
-  { name: "HTML 5", icon: html },
-  { name: "CSS 3", icon: css },
-  { name: "JavaScript", icon: javascript },
-  { name: "Rect JS", icon: reactjs },
-  { name: "Expertise in Influencer Marketing", icon: cpp },
-  { name: "Node JS", icon: nodejs },
-  { name: "Adaptability", icon: java },
-  { name: "git", icon: git },
+  { name: "Email", icon: html ,link: "mailto:lpuga2012@gmail.com"},
+  { name: "LinkedIn", icon: css, link: "https://www.linkedin.com/in/lucaspugamateo/" },
+  { name: "Location", icon: javascript, link: "https://maps.app.goo.gl/hXgfzysp5Dbk2eut5" },
 ];
 
 export const experiences = [
-  {
-    title: "Customer management in a beauty lab",
-    company_name: "Telco",
-    icon: BNP2,
-    iconBg: "#0f2111ff",
-    date: "October 2021 - October 2023",
-    points: [
-      "Managing conflict situations, providing a swift and appropriate response.",
-    ],
-  },
-  
-  {
-    title: "Campaigns and Activations manager",
-    company_name: "Playoffnations Co.",
-    icon: BNP,
-    iconBg: "#0f2111ff",
-    date: "October 2023 - March 2024",
-    points: [
-      "Influencer marketing management, social media management, and campaign management with subsequent reporting.",
-    ],
-  },
-
   {
     title: "Marketing manager",
     company_name: "Playoffnations Co.",
@@ -91,6 +61,28 @@ export const experiences = [
       "Advice on knowledge and decisions in video games",
     ],
   },
+  {
+    title: "Campaigns and Activations manager",
+    company_name: "Playoffnations Co.",
+    icon: BNP,
+    iconBg: "#0f2111ff",
+    date: "October 2023 - March 2024",
+    points: [
+      "Influencer marketing management, social media management, and campaign management with subsequent reporting.",
+    ],
+  },
+  {
+    title: "Customer management in a beauty lab",
+    company_name: "Telco",
+    icon: BNP2,
+    iconBg: "#0f2111ff",
+    date: "October 2021 - October 2023",
+    points: [
+      "Managing conflict situations, providing a swift and appropriate response.",
+    ],
+  },
+  
+  
   
 ];
 
