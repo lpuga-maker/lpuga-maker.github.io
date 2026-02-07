@@ -22,7 +22,7 @@ const ServiceCard = ({ index, title, icon }) => (
       >
         <img src={icon} alt="web-development" className="w-16 h-16 object-contain" loading="lazy" />
 
-        <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+        <h3 className="text-white text-[20px] font-bold text-center break-words">{title}</h3>
       </div>
     </motion.div>
   </Tilt>
@@ -38,7 +38,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] break-words"
       >
         Gaming and marketing is what I`m all about.
         <br/>

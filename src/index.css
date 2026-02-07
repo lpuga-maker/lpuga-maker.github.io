@@ -142,3 +142,14 @@
 .confirmation {
   color: #00ff00;
 }
+
+/* Text wrapping utilities for better translation support */
+.break-words {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.break-all {
+  word-break: break-all;
+}

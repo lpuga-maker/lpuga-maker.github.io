@@ -35,7 +35,7 @@ const ServiceCard = ({ index, title, icon, link }) => (
           />
         </a>
 
-        <h3 className="text-white text-[20px] font-bold text-center mt-4">{title}</h3>
+        <h3 className="text-white text-[20px] font-bold text-center mt-4 break-words">{title}</h3>
       </div>
     </motion.div>
   </Tilt>
@@ -50,13 +50,13 @@ const Contact = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] break-words"
       >
-        Email: <a href="mailto:lpuga2012@gmail.com" className="text-white underline">lpuga2012@gmail.com</a>
+        Email: <a href="mailto:lpuga2012@gmail.com" className="text-white underline break-all">lpuga2012@gmail.com</a>
         <br />
-        LinkedIn: <a href="https://www.linkedin.com/in/lucaspugamateo/" className="text-white underline">linkedin.com/in/lpuga/</a>
+        LinkedIn: <a href="https://www.linkedin.com/in/lucaspugamateo/" className="text-white underline break-all">linkedin.com/in/lpuga/</a>
         <br />
-        Location: <a href="https://maps.app.goo.gl/hXgfzysp5Dbk2eut5" className="text-white underline">Madrid (28016), Spain</a>
+        Location: <a href="https://maps.app.goo.gl/hXgfzysp5Dbk2eut5" className="text-white underline break-all">Madrid (28016), Spain</a>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
