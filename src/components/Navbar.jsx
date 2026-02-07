@@ -17,13 +17,11 @@ const Navbar = () => {
   }, [toggle]);
 
   const renderNavLinks = (isSecondary) => (
-    <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'} flex-row gap-6`}>
+    <ul className={isSecondary ? 'list-none flex sm:hidden flex-col gap-4' : 'list-none hidden sm:flex flex-row gap-6'}>
       {navLinks.map((link) => (
         <li
           key={link.id}
-          className={`$
-            active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
-          } hover:text-white text-[20px] font-medium cursor-pointer`}
+          className={`${active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'} hover:text-white ${isSecondary ? 'text-[16px]' : 'text-[20px]'} font-medium cursor-pointer`}
           onClick={() => {
             setActive(link.title);
             if (isSecondary) {
@@ -35,9 +33,7 @@ const Navbar = () => {
         </li>
       ))}
       <li
-        className={`text-${
-          isSecondary ? 'secondary' : 'white'
-        } hover:text-white text-[20px] font-medium cursor-pointer`}
+        className={`${isSecondary ? 'text-secondary' : 'text-white'} hover:text-white ${isSecondary ? 'text-[16px]' : 'text-[20px]'} font-medium cursor-pointer`}
       >
         <a
           href={`${import.meta.env.BASE_URL}/LucasPugaCV.pdf`}
@@ -75,7 +71,7 @@ const Navbar = () => {
               onClick={() => setToggle(!toggle)}
             />
             <div
-              className={`p-4 black-gradient absolute top-14 right-0 mx-2 my-2 min-w-[120px] z-10 rounded-xl foggy-glass ${
+              className={`p-4 black-gradient absolute top-20 right-2 min-w-[140px] z-10 rounded-xl foggy-glass flex flex-col gap-4 ${
                 toggle ? 'flex' : 'hidden'
               }`}
             >

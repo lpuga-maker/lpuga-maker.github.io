@@ -1,7 +1,43 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import Typewriter from "typewriter-effect";
+
+const TypewriterText = ({ words }) => {
+  const [displayText, setDisplayText] = useState("");
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [speed, setSpeed] = useState(100);
+
+  useEffect(() => {
+    const currentWord = words[wordIndex];
+    const shouldDelete = isDeleting;
+
+    const timeout = setTimeout(() => {
+      if (shouldDelete) {
+        setDisplayText((prev) => prev.slice(0, -1));
+        if (displayText.length === 0) {
+          setIsDeleting(false);
+          setWordIndex((prev) => (prev + 1) % words.length);
+          setSpeed(100);
+        } else {
+          setSpeed(30);
+        }
+      } else {
+        if (displayText.length < currentWord.length) {
+          setDisplayText((prev) => prev + currentWord[displayText.length]);
+          setSpeed(50);
+        } else {
+          setSpeed(2000);
+          setIsDeleting(true);
+        }
+      }
+    }, speed);
+
+    return () => clearTimeout(timeout);
+  }, [displayText, wordIndex, isDeleting, speed, words]);
+
+  return <span>{displayText}</span>;
+};
 
 const Hero = () => {
   return (
@@ -12,22 +48,15 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div className="max-w-4xl">
+        <div className="max-w-4xl w-full">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hello, I'm <span className="text-[#915EFF]">Lucas Puga</span> Marketing manager.
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am passionate about
-            <Typewriter
-              options={{
-                strings: ["Marketing", "Gaming", "Personal Development"],
-                autoStart: true,
-                loop: true,
-                loopCount: Infinity,
-                deleteSpeed: "natural",
-                pauseFor: 1000,
-              }}
-            />
+            I am passionate about{' '}
+            <span className="text-[#915EFF]">
+              <TypewriterText words={["Marketing", "Gaming", "Personal Development"]} />
+            </span>
           </p>
         </div>
       </div>
