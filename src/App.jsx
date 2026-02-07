@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { About, Contact, Experience, Hero, Navbar, Tech, Works } from './components';
+import { herobg } from './assets';
 
 const App = () => {
   return (
@@ -11,23 +12,33 @@ const App = () => {
       }}
     >
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center section-gradient-1">
+        <div 
+          className="bg-no-repeat bg-center w-full min-h-screen"
+          style={{ 
+            backgroundColor: '#000D15',
+            backgroundImage: `url(${herobg})`,
+            backgroundSize: '100% auto',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'scroll',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
           <Navbar />
           <Hero />
         </div>
-        <div className="section-gradient-2">
+        <div className="bg-primary">
           <About />
         </div>
-        <div className="section-gradient-3">
+        <div className="bg-primary">
           <Experience />
         </div>
-        <div className="section-gradient-4">
+        <div className="bg-primary">
           <Tech />
         </div>
-        <div className="section-gradient-5">
+        <div className="bg-primary">
           <Works />
         </div>
-        <div className="relative z-0 section-gradient-2">
+        <div className="relative z-0 bg-primary">
           <Contact />
         </div>
       </div>

@@ -27,6 +27,7 @@ import BNP2 from "./company/BNP2.jpg"
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import herobg from "./herobg.png";
 
 export {
   python,
@@ -49,4 +50,5 @@ export {
   BNP2,
   menu,
   close,
+  herobg,
 };
