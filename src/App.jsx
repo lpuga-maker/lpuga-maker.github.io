@@ -17,7 +17,7 @@ const App = () => {
           style={{ 
             backgroundColor: '#000D15',
             backgroundImage: `url(${herobg})`,
-            backgroundSize: '100% auto',
+            backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'scroll',
             backgroundRepeat: 'no-repeat'
