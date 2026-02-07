@@ -74,6 +74,10 @@ const Navbar = () => {
               className={`p-4 black-gradient absolute top-20 right-2 min-w-[140px] z-10 rounded-xl foggy-glass flex flex-col gap-4 ${
                 toggle ? 'flex' : 'hidden'
               }`}
+              style={{
+                backgroundColor: 'rgba(0, 13, 21, 0.95)',
+                backdropFilter: 'blur(10px)'
+              }}
             >
               {renderNavLinks(true)}
             </div>
