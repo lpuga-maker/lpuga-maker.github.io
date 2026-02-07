@@ -25,16 +25,21 @@
   background: linear-gradient(to right, #434343, #000000);
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.blue-gradient {  /*Gradient hero line*/
+  background: #2563EB;
+  background: linear-gradient(-90deg, #2563EB 0%, rgba(37, 99, 235, 0) 100%);
+  background: -webkit-linear-gradient(-90deg, #2563EB 0%, rgba(37, 99, 235, 0) 100%);
 }
 
 .green-pink-gradient {
   background: #00cea8;
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.white-border {
+  background: linear-gradient(90deg, #3B82F6 0%, #FFFFFF 100%);
+  background: -webkit-linear-gradient(90deg, #3B82F6 0%, #FFFFFF 100%);
 }
 
 .orange-text-gradient,
@@ -54,6 +59,27 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity by modifying the last value (0.5 in this case) */
   z-index: 9999; /* Adjust the z-index to ensure it's displayed above other elements if necessary */
+}
+
+/* Section gradient backgrounds */
+.section-gradient-1 {
+  background: linear-gradient(180deg, #050816 0%, #0f1729 100%);
+}
+
+.section-gradient-2 {
+  background: linear-gradient(180deg, #0f1729 0%, #1a2332 100%);
+}
+
+.section-gradient-3 {
+  background: linear-gradient(180deg, #1a2332 0%, #1f2937 100%);
+}
+
+.section-gradient-4 {
+  background: linear-gradient(180deg, #1f2937 0%, #1a2332 100%);
+}
+
+.section-gradient-5 {
+  background: linear-gradient(180deg, #1a2332 0%, #0f1729 100%);
 }
 
 @keyframes spin {

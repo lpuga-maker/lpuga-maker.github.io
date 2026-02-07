@@ -44,17 +44,17 @@ const Hero = () => {
     <section className="relative w-full h-screen mx-auto">
       <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          <div className="w-5 h-5 rounded-full bg-[#3B82F6]" />
+          <div className="w-1 sm:h-80 h-40 blue-gradient" />
         </div>
 
         <div className="max-w-4xl w-full">
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hello, I'm <span className="text-[#915EFF]">Lucas Puga</span> Marketing manager.
+            Hello, I'm <span className="text-[#3B82F6]">Lucas Puga</span> Marketing manager.
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I am passionate about{' '}
-            <span className="text-[#915EFF]">
+            <span className="text-[#3B82F6]">
               <TypewriterText words={["Marketing", "Gaming", "Personal Development"]} />
             </span>
           </p>
